@@ -20,7 +20,7 @@ body {
       rgba(34, 25, 0, 0.25),
       rgba(34, 25, 0, 0.25)
     ),
-    url("../img/hero-img-sqshed.jpg");
+    url("img/hero-img-sqshed.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
