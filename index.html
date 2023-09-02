@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Default bootstrap link for CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+
+    <!-- Custom CSS stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <title>Kelce & Roberts Law Office</title>
+  </head>
+
+  <body>
+    <!-- Container for both navbar & hero section -->
+    <!-- <div class="container-lg position-relative"> -->
+    <!-- navbar -->
+    <!-- navbar to expand to list when screen become lg -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
+      <!-- container so navbar doesn't go all the way to the sides -->
+      <div class="container-lg">
+        <!-- navbar brand -->
+        <a href="#" class="navbar-brand">
+          <span class="fw-bold text-white">
+            <i class="bi bi-people-fill"></i> Kelce & Roberts Law Office
+          </span>
+        </a>
+
+        <!-- toggle button for mobile nav -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main-nav"
+          aria-controls="main-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- navbar links -->
+        <!-- div that contains the navbar links will collapse upon toggle -->
+        <!-- Add 'collapse' and 'navbar-collapse', also add the id 'main-nav' -->
+        <div
+          class="collapse navbar-collapse justify-content-end align-center"
+          id="main-nav"
+        >
+          <ul class="navbar-nav text-nowrap">
+            <li class="nav-item ms-2">
+              <a class="nav-link text-white" href="#">Home</a>
+            </li>
+            <li class="nav-item ms-2">
+              <a class="nav-link text-white" href="#about">About Us</a>
+            </li>
+            <li class="nav-item ms-2">
+              <a class="nav-link text-white" href="#services">Services</a>
+            </li>
+            <li class="nav-item ms-2">
+              <a class="nav-link text-white" href="#attorneys">Attorneys</a>
+            </li>
+            <li class="nav-item ms-2">
+              <a class="nav-link text-white" href="#faqs">FAQs</a>
+            </li>
+            <li class="nav-item ms-2">
+              <a class="nav-link text-white" href="#contact">Contact</a>
+            </li>
+            <!-- Note there's no 'nav-link' for last anchor -->
+            <li class="nav-item ms-2">
+              <a class="btn btn-gold fw-bold shadow" href="#cta"
+                >800-456-7786</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-container">
+      <div class="container-lg px-4">
+        <div class="row pt-5 align-items-bottom">
+          <!-- Text col centered on small screen, start on larger screens-->
+          <div class="col-md-6 mt-5 text-center text-md-start text-white">
+            <h1 class="mt-5">
+              <div class="display-5 hero-title">
+                Dedicated to One Client at a Time
+              </div>
+            </h1>
+            <p class="fs-6 my-5">
+              At Kelce & Roberts, we protect your rights and secure your future.
+              Our expertise, experience and dedication wins favorable outcomes
+              for your cases. Contact us today for a free consultation.
+            </p>
+            <a
+              href="#cta"
+              class="btn btn-gold text-dark mb-5 px-3 py-2 fw-bold shadow"
+              >Request Free Consultation</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- </div> -->
+
+    <!-- About us Section -->
+    <section id="about">
+      <div class="container-lg px-4 my-5">
+        <div class="row align-items-top justify-content-center gx-5">
+          <!-- img col, only display when sm screen and up -->
+          <div class="col-md-5 pt-2 text-center d-none d-md-block">
+            <img
+              class="img-fluid shadow"
+              src="img/about-us-sqshed.jpg"
+              alt="about us image"
+            />
+          </div>
+          <!-- text col -->
+          <div class="col-md-7 py-3 text-start">
+            <h2
+              class="fs-6 mb-3 fw-bold text-secondary text-center text-md-start"
+            >
+              ABOUT US
+            </h2>
+            <h1 class="fs-2 text-center text-md-start">
+              Over 30 Years of Trusted Service
+            </h1>
+            <p class="my-4 py-1">
+              With over 600 legal cases under our belt, Kelce & Roberts is
+              dedicated to protecting the rights and interests of our clients.
+              Our team of experienced attorneys is committed to providing expert
+              legal guidance and representation.
+              <br /><br />
+              If you are facing a legal issue, reach out to us and we will help
+              you find the best way to solve your tough problem.
+            </p>
+            <!-- Accolade grid -->
+            <div class="container-fluid py-2">
+              <div class="row my-2 align-items-top justify-content-center g-1">
+                <div class="col text-center text-md-start">
+                  <h2 class="fs-4 fw-bold">400+</h2>
+                  <h4 class="fs-6 text-secondary">Trusted<br />Clients</h4>
+                </div>
+                <div class="col text-center text-md-start">
+                  <h2 class="fs-4 fw-bold">632</h2>
+                  <h4 class="fs-6 text-secondary">Successful<br />Cases</h4>
+                </div>
+                <div class="col text-center text-md-start">
+                  <h2 class="fs-4 fw-bold">6</h2>
+                  <h4 class="fs-6 text-secondary">Practice<br />Areas</h4>
+                </div>
+                <div class="col text-center text-md-start">
+                  <h2 class="fs-4 fw-bold">50+</h2>
+                  <h4 class="fs-6 text-secondary">Honors &<br />Awards</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-dark-tone py-4">
+      <div class="container-lg px-4 my-5">
+        <!-- section title -->
+        <div class="text-center">
+          <h2 class="fs-6 mb-3 fw-bold text-secondary">SERVICES</h2>
+          <h1 class="fs-2">Areas of Practice</h1>
+        </div>
+        <!-- services grid -->
+        <div class="row my-5 align-items-top justify-content-center g-4">
+          <!-- col 1 -->
+          <div class="col-lg-4 text-start px-4">
+            <!-- Container 1 for service in col -->
+            <div>
+              <!-- service icon -->
+              <h2><i class="bi bi-briefcase-fill"></i></h2>
+              <!-- service content div -->
+              <div>
+                <h2 class="fs-3 mb-3">Business Law</h2>
+                <p class="mb-4">
+                  Running a business a tough, running into a business legal
+                  trouble is tougher. We are here to help our clients solve
+                  legal issues so they could run their business better.
+                </p>
+                <a href="#" class="btn btn-gold"
+                  ><span class="fw-bold"
+                    >Learn More <i class="bi bi-arrow-right"></i
+                  ></span>
+                </a>
+              </div>
+            </div>
+            <!-- Container 2 for service in col -->
+            <div class="my-5">
+              <!-- service icon -->
+              <h2><i class="bi bi-credit-card-2-back-fill"></i></h2>
+              <!-- service content div -->
+              <div>
+                <h2 class="fs-3 mb-3">Criminal Law</h2>
+                <p class="mb-4">
+                  Criminal law is a system of laws concerned with punishment of
+                  individuals who commit crimes. If you believe you are a victim
+                  of a criminal activity, we are here to help.
+                </p>
+                <a href="#" class="btn btn-gold"
+                  ><span class="fw-bold"
+                    >Learn More <i class="bi bi-arrow-right"></i
+                  ></span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- col 2 -->
+          <div class="col-lg-4 text-start px-4">
+            <!-- Container 1 for service in col -->
+            <div>
+              <!-- service icon -->
+              <h2><i class="bi bi-person-fill"></i></h2>
+              <!-- service content div -->
+              <div>
+                <h2 class="fs-3 mb-3">Family Law</h2>
+                <p class="mb-4">
+                  Our family law practice specializes in areas of Dissolution of
+                  Marriage, Domestic Partnership, Legal Separation,
+                  Guardianships, Child Custody and support, among others.
+                </p>
+                <a href="#" class="btn btn-gold"
+                  ><span class="fw-bold"
+                    >Learn More <i class="bi bi-arrow-right"></i
+                  ></span>
+                </a>
+              </div>
+            </div>
+            <!-- Container 2 for service in col -->
+            <div class="my-5">
+              <!-- service icon -->
+              <h2><i class="bi bi-buildings-fill"></i></h2>
+              <!-- service content div -->
+              <div>
+                <h2 class="fs-3 mb-3">Real Estate Law</h2>
+                <p class="mb-4">
+                  Owning real estate property is a fundmental right of the
+                  people of America. We are here to ensure that transactions of
+                  your properties are handled safely and professionally.
+                </p>
+                <a href="#" class="btn btn-gold"
+                  ><span class="fw-bold"
+                    >Learn More <i class="bi bi-arrow-right"></i
+                  ></span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- col 3 -->
+          <div class="col-lg-4 text-start px-4">
+            <!-- Container 1 for service in col -->
+            <div>
+              <!-- service icon -->
+              <h2><i class="bi bi-bank2"></i></h2>
+              <!-- service content div -->
+              <div>
+                <h2 class="fs-3 mb-3">Finance Law</h2>
+                <p class="mb-4">
+                  We help clients secure loans, mortgages, and handle disputes.
+                  If you are a financial institution that is dealing with a
+                  complex regulation issue, we are here to help.
+                </p>
+                <a href="#" class="btn btn-gold"
+                  ><span class="fw-bold"
+                    >Learn More <i class="bi bi-arrow-right"></i
+                  ></span>
+                </a>
+              </div>
+            </div>
+            <!-- Container 2 for service in col -->
+            <div class="my-5">
+              <!-- service icon -->
+              <h2><i class="bi bi-android2"></i></h2>
+              <!-- service content div -->
+              <div>
+                <h2 class="fs-3 mb-3">IP Law</h2>
+                <p class="mb-4">
+                  We help inventors and entrepreneurs secure patents to protect
+                  their innovations. We also handle patent-related cases such as
+                  infringement, licensing, and re-examination.
+                </p>
+                <a href="#" class="btn btn-gold"
+                  ><span class="fw-bold"
+                    >Learn More <i class="bi bi-arrow-right"></i
+                  ></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Attorneys Section -->
+    <section id="attorneys" class="py-4">
+      <div class="container-lg px-4 my-5">
+        <!-- section title -->
+        <div class="text-center text-lg-start">
+          <h2 class="fs-6 mb-3 fw-bold text-secondary">ATTORNEYS</h2>
+          <h1 class="fs-2">Meet Our Team</h1>
+        </div>
+
+        <!-- First attorney segment -->
+        <div
+          class="row mt-4 pt-2 mb-5 align-items-top justify-content-center g-4"
+        >
+          <!-- img col, only display when sm screen and up -->
+          <div class="col-md-5 text-center">
+            <img
+              class="img-fluid shadow"
+              src="img/att-1-sqshed.jpg"
+              alt="about us image"
+            />
+          </div>
+
+          <!-- text col -->
+          <div class="col-md-7 text-start px-4 py-2">
+            <!-- Attorney name and title -->
+            <div>
+              <h3 class="fs-5 text-secondary">Founder and Managing Partner</h3>
+              <h2 class="fs-3">Johnson B. Kelce</h2>
+            </div>
+            <!-- Attorney Bio Grid -->
+            <div class="row my-2 align-items-start justify-content-center g-4">
+              <!-- Experience col -->
+              <div class="col-lg-12 text-start">
+                <div class="pb-3">
+                  As the founding partner of Kelce & Roberts, Mr. Kelce is a
+                  veteran litigator with over 25 years of legal experience. He
+                  is driven by client-focused advocacy coupled with exceptional
+                  legal knowledge and skill. His clients trust him to listen to
+                  their needs and to offer them competent and realistic legal
+                  advice. <br /><br />Mr. Kelce represents a wide variety of
+                  clients including financial institutions, small businesses,
+                  and individuals. He is licensed to practice in both Illinois
+                  and California.
+                </div>
+                <!-- Education segment -->
+                <div class="my-3">
+                  <h4 class="fs-5">EDUCATION</h4>
+                  <ul class="attorney-list">
+                    <li>J.D., The Marshall Law School</li>
+                    <li>B.A., University of Los Angeles</li>
+                  </ul>
+                </div>
+                <!-- Admissions segment -->
+                <div class="my-3 pt-3">
+                  <h4 class="fs-5">ADMISSIONS TO PRACTICE</h4>
+                  <ul class="attorney-list">
+                    <li>Illinois</li>
+                    <li>California</li>
+                    <li>United States Supreme Court</li>
+                  </ul>
+                </div>
+                <!-- Affiliations segment -->
+                <div class="my-3 pt-3">
+                  <h4 class="fs-5">PROFESSIONAL AFFILIATIONS</h4>
+                  <ul class="attorney-list">
+                    <li>American Bar Association</li>
+                    <li>Chicago Bar Association</li>
+                    <li>Cook County Bar Association</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second attorney segment -->
+        <div class="row my-5 align-items-top justify-content-center g-4">
+          <!-- text col -->
+          <div class="col-md-7 text-start px-4 py-2">
+            <!-- Attorney name and title -->
+            <div>
+              <h3 class="fs-5 text-secondary">Managing Partner</h3>
+              <h2 class="fs-3">Jayden C. Roberts</h2>
+            </div>
+            <!-- Attorney Bio Grid -->
+            <div class="row my-2 align-items-start justify-content-center g-4">
+              <!-- Experience col -->
+              <div class="col-lg-12 text-start">
+                <div class="pb-3">
+                  After nearly two decades of praciticing in some of the most
+                  respected law firms in the country, Mr. Roberts joined Kelce &
+                  Roberts as a managing partner 12 years ago. Mr. Roberts has
+                  extensive experience in litigation and alternative dispute
+                  resolution. He is widely known for his ability to prevent
+                  claim from arising where possible, and resolving the disputes
+                  that do arise effectively. <br /><br />Mr. Roberts represents
+                  a wide variety of clients including financial institutions,
+                  small businesses, and inventors. He is licensed to practice in
+                  both Illinois and California.
+                </div>
+                <!-- Education segment -->
+                <div class="my-3">
+                  <h4 class="fs-5">EDUCATION</h4>
+                  <ul class="attorney-list">
+                    <li>J.D., University of Colorado</li>
+                    <li>B.A., Georgetown University</li>
+                  </ul>
+                </div>
+                <!-- Admissions segment -->
+                <div class="my-3 pt-3">
+                  <h4 class="fs-5">ADMISSIONS TO PRACTICE</h4>
+                  <ul class="attorney-list">
+                    <li>Illinois</li>
+                    <li>California</li>
+                    <li>
+                      United States District Court for the District of Illinois
+                    </li>
+                  </ul>
+                </div>
+                <!-- Affiliations segment -->
+                <div class="my-3 pt-3">
+                  <h4 class="fs-5">PROFESSIONAL AFFILIATIONS</h4>
+                  <ul class="attorney-list">
+                    <li>American Bar Association</li>
+                    <li>Chicago Bar Association</li>
+                    <li>Illinois Trial Lawyers Association</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- img col, only display when sm screen and up -->
+          <div class="col-md-5 text-center">
+            <img
+              class="img-fluid shadow"
+              src="img/att-2-sqed.jpg"
+              alt="about us image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section id="faqs" class="py-4">
+      <div class="container-lg px-4 my-4">
+        <!-- section title -->
+        <div class="text-center text-lg-start">
+          <h2 class="fs-6 mb-3 fw-bold text-secondary">FAQs</h2>
+          <h1 class="fs-2">How Can We Help You?</h1>
+        </div>
+        <!-- FAQ content segment -->
+        <div class="row my-4 align-items-top justify-content-center g-5">
+          <!-- text & img col -->
+          <div class="col-md-6 text-start">
+            <!-- text div -->
+            <div>
+              <p class="fs-6">
+                An unexpected legal issue might arise from anywhere in life. It
+                could be your business or personal life. When the unexpected
+                happens, we at Kelce & Roberts fully understand how anxious and
+                uncertain you are and we are here to help.<br /><br />
+                You may be wondering what to do next, if you should call the
+                police, or if you should file a lawsuit or claim. Our FAQ
+                section provides answers to some of the most common questions
+                you might be having. Please take a look and it might help you
+                plan out your next course of action. If you'd like to dive
+                deeper, please reach out to us for a free consultation.
+              </p>
+            </div>
+
+            <!-- img div -->
+            <div class="my-5 pe-0 pe-lg-5 d-none d-md-block">
+              <div>
+                <img
+                  class="img-fluid shadow"
+                  src="img/faq-img-sqshed.jpg"
+                  alt="about us image"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ accordion col -->
+          <div class="col-md-6 text-center">
+            <!-- accordion -->
+            <div class="accordion" id="questions">
+              <!-- accordion item 1 -->
+              <div class="accordion-item">
+                <!-- item 1 header -->
+                <h2 class="accordion-header" id="heading-1">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#question-1"
+                    aria-expanded="true"
+                    aria-controls="question-1"
+                  >
+                    What is the typical legal process like?
+                  </button>
+                </h2>
+                <!-- item 1 body -->
+                <!-- accordion-body container -collapsable element -->
+                <div
+                  id="question-1"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="question-1"
+                  data-bs-parent="#questions"
+                >
+                  <div class="accordion-body text-start">
+                    <p>
+                      While the proceedings are similar, and case lengths have a
+                      limited range in some instances, every case is different.
+                    </p>
+                    <p>
+                      Rest assured however, we will provide you with a detailed
+                      roadmap and timeline of all major events for your case
+                      during consultation, including filing claims, discovery,
+                      resolutions before trial, trial, verdict, and appeal, etc.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- accordion item 2 -->
+              <div class="accordion-item">
+                <!-- item 2 header -->
+                <h2 class="accordion-header" id="heading-2">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#question-2"
+                    aria-expanded="false"
+                    aria-controls="question-2"
+                  >
+                    What should I bring to the first consultation?
+                  </button>
+                </h2>
+                <!-- item 2 body -->
+                <!-- accordion-body container -collapsable element -->
+                <div
+                  id="question-2"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="question-2"
+                  data-bs-parent="#questions"
+                >
+                  <div class="accordion-body text-start">
+                    <p>
+                      Once our client calls in for a consultation, we will be
+                      able to provide them with an exact list of what to bring.
+                    </p>
+                    <p>
+                      Typical items to bring include your ID, any case-related
+                      legal documentation, any support evidence proofs, any
+                      case-related media files, police records (if applicable),
+                      etc.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- accordion item 3 -->
+              <div class="accordion-item">
+                <!-- item 3 header -->
+                <h2 class="accordion-header" id="heading-3">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#question-3"
+                    aria-expanded="false"
+                    aria-controls="question-3"
+                  >
+                    Will I have to go to court?
+                  </button>
+                </h2>
+                <!-- item 3 body -->
+                <!-- accordion-body container -collapsable element -->
+                <div
+                  id="question-3"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="question-3"
+                  data-bs-parent="#questions"
+                >
+                  <div class="accordion-body text-start">
+                    <p>
+                      It is all on a case-by-case basis. However, based on the
+                      type of your case, there may be options to settle out of
+                      court.
+                    </p>
+                    <p>
+                      For example, while diverce can often be mediated, criminal
+                      law may have no other option besides attending a court
+                      hearing depending on the charges being brought.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- accordion item 4 -->
+              <div class="accordion-item">
+                <!-- item 4 header -->
+                <h2 class="accordion-header" id="heading-4">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#question-4"
+                    aria-expanded="false"
+                    aria-controls="question-4"
+                  >
+                    How long do I have to file a lawsuit?
+                  </button>
+                </h2>
+                <!-- item 4 body -->
+                <!-- accordion-body container -collapsable element -->
+                <div
+                  id="question-4"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="question-4"
+                  data-bs-parent="#questions"
+                >
+                  <div class="accordion-body text-start">
+                    <p>
+                      It all depends on your case type and which state your
+                      lawsuit is filed in. For example, the statute of
+                      limitations on a product injury lawsuit in Illionis is two
+                      years, while in California, people have up to four years
+                      to file.
+                    </p>
+                    <p>
+                      We will be able to tell you precisely how much time you
+                      have to file for your case during our first consultation.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- accordion item 5 -->
+              <div class="accordion-item">
+                <!-- item 5 header -->
+                <h2 class="accordion-header" id="heading-5">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#question-5"
+                    aria-expanded="false"
+                    aria-controls="question-5"
+                  >
+                    Will there be more than one attorney working on my case?
+                  </button>
+                </h2>
+                <!-- item 5 body -->
+                <!-- accordion-body container -collapsable element -->
+                <div
+                  id="question-5"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="question-5"
+                  data-bs-parent="#questions"
+                >
+                  <div class="accordion-body text-start">
+                    <p>
+                      We typically assign one attorney to one case at a time to
+                      ensure maximum attorney focus and effectiveness. However,
+                      in cases of large lawsuits, we could have multiple
+                      attorneys working on the same case together.
+                    </p>
+                    <p>
+                      If you have concerns or specific requirements regarding
+                      attorney assignment, please reach out to us to discuss at
+                      any time. We are happy to accommodate your needs to the
+                      best of our abilities.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="cta-container my-5">
+      <div class="container-lg px-4">
+        <div class="row pt-5 pb-2 align-items-center justify-content-center">
+          <!-- Text col -->
+          <div class="col-md-9 mt-1 text-center text-white">
+            <h1 class="mt-3">
+              <div class="display-5 cta-title">
+                <h2 class="fs-6 mb-3 fw-bold text-secondary">GET IN TOUCH</h2>
+                <h1 class="fs-2">Schedule a Free Consultation</h1>
+              </div>
+            </h1>
+            <p class="my-5">
+              We are here to help. Our attorneys will give you a straighforward
+              evaluation of your case and discuss your initial legal options
+              with you with full confidentiality. Contact us today for a free
+              consultation.
+              <br /><br />You can reach us at <b>800-456-7786</b> or click the
+              link below.
+            </p>
+            <!-- grid for cta buttons now only 1 button -->
+            <!-- <div class="row py-3 justify-content-center align-items-center"> -->
+            <div class="text-center justify-content-center text-nowrap">
+              <a
+                href="#"
+                class="btn btn-gold text-dark mb-5 px-3 py-2 fw-bold shadow"
+                >Request Free Consultation</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="my-5">
+      <div class="container-lg px-4 py-5">
+        <!-- section title -->
+        <div class="text-center text-lg-start">
+          <h1 class="fs-2">Contact</h1>
+        </div>
+        <!-- section grid - text and map -->
+        <div class="row pt-5 align-items-top justify-content-center">
+          <!-- Text col -->
+          <div class="col-lg-5 mt-1 mb-5">
+            <!-- How to Find Us Segment -->
+            <!-- How to find us title -->
+            <div class="mb-4 pb-1">
+              <h4 class="fs-5">HOW TO FIND US</h4>
+            </div>
+
+            <!-- How to Find us grids -->
+            <!-- How to Find us content - address -->
+            <div class="row px-2 align-items-top justify-content-start">
+              <!-- icon address -->
+              <div class="col-1">
+                <i class="bi bi-geo-alt-fill text-secondary"></i>
+              </div>
+              <!-- contact address -->
+              <div class="col-8">
+                <p>202 N. Robertson Street<br />Chicago, Illinois 60665</p>
+              </div>
+            </div>
+
+            <!-- How to Find us content - phone -->
+            <div class="row my-2 px-2 align-items-top justify-content-start">
+              <!-- icon phone -->
+              <div class="col-1">
+                <i class="bi bi-telephone-fill text-secondary"></i>
+              </div>
+              <!-- contact phone -->
+              <div class="col-8">
+                <p>(800) 456-7786</p>
+              </div>
+            </div>
+
+            <!-- How to Find us content - mail -->
+            <div class="row my-2 px-2 align-items-top justify-content-start">
+              <!-- icon mail -->
+              <div class="col-1">
+                <i class="bi bi-envelope"></i>
+              </div>
+              <!-- contact mail -->
+              <div class="col-8">
+                <p>contact@kelceroberts.com</p>
+              </div>
+            </div>
+
+            <!-- Opening Hours Segment -->
+            <!-- Opening hours title -->
+            <div class="mt-5 pt-2 mb-4 pb-1">
+              <h4 class="fs-5">OPENING HOURS</h4>
+            </div>
+
+            <!-- Opening hours grids -->
+            <!-- Weekdays -->
+            <div class="row my-2 px-2 align-items-center justify-content-start">
+              <!-- Days -->
+              <div class="col-4 col-md-3 col-lg-6">Monday - Friday</div>
+              <!-- Time -->
+              <div class="col-4 col-md-3 col-lg-6">10:00 - 18:00</div>
+            </div>
+
+            <!-- Weekends -->
+            <div class="row my-2 px-2 align-items-center justify-content-start">
+              <!-- Days -->
+              <div class="col-4 col-md-3 col-lg-6">Saturday</div>
+              <!-- Time -->
+              <div class="col-4 col-md-3 col-lg-6">10:00 - 14:00</div>
+            </div>
+
+            <div class="row my-2 px-2 align-items-center justify-content-start">
+              <!-- Days -->
+              <div class="col-4 col-md-3 col-lg-6">Sunday</div>
+              <!-- Time -->
+              <div class="col-4 col-md-3 col-lg-6">10:00 - 14:00</div>
+            </div>
+          </div>
+
+          <!-- Map col -->
+          <div class="col-lg-7 mt-1 align-items-center justify-content-center">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.420043740736!2d-87.63426648448966!3d41.883822779221695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fce15bc745ef9%3A0x7b402e91b51943f9!2sCity%20of%20Chicago%20-%20City%20Hall!5e0!3m2!1sen!2sus!4v1674953607303!5m2!1sen!2sus"
+              width="100%"
+              height="423px"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer-section" class="mt-4 bg-dark">
+      <div class="container-lg px-4 pt-5 pb-4">
+        <!-- footer grid -->
+        <div
+          class="row align-items-top justify-content-center justify-content-lg-between"
+        >
+          <!-- footer left col -->
+          <div class="col-md-6 pt-2">
+            <!-- logo and heading div -->
+            <div>
+              <a
+                href="#"
+                class="text-decoration-none text-center text-md-start"
+              >
+                <p class="fs-5 text-white fw-bold shadow">
+                  <i class="bi bi-people-fill fs-5 shadow"></i> Kelce & Roberts
+                  Law Office
+                </p>
+              </a>
+            </div>
+            <!-- brief intro div -->
+            <div class="pt-3">
+              <p class="small text-secondary text-center text-md-start">
+                Providing professional and trusted <br />legal guidance since
+                1992 <br /><br />Call 800-456-7786 for a free consultation
+              </p>
+            </div>
+          </div>
+          <!-- footer right col (links) -->
+          <div class="col-md-6 justify-content-center">
+            <!-- link grid -->
+            <div class="row justify-content-center">
+              <!-- Company links -->
+              <div class="col-md-6">
+                <!-- heading -->
+                <div>
+                  <h5
+                    class="mt-3 mb-3 fs-6 text-white text-center text-md-end fw-bold"
+                  >
+                    Company
+                  </h5>
+                </div>
+                <!-- Link list -->
+                <ul class="pt-3 small list-unstyled text-center text-md-end">
+                  <li class="pb-2">
+                    <a href="#about" class="text-decoration-none text-secondary"
+                      >About Us</a
+                    >
+                  </li>
+                  <li class="pb-2">
+                    <a
+                      href="#services"
+                      class="text-decoration-none text-secondary"
+                      >Services</a
+                    >
+                  </li>
+                  <li class="pb-2">
+                    <a
+                      href="#attorneys"
+                      class="text-decoration-none text-secondary"
+                      >Attorneys</a
+                    >
+                  </li>
+                  <li class="pb-2">
+                    <a href="#faqs" class="text-decoration-none text-secondary"
+                      >FAQs</a
+                    >
+                  </li>
+                  <li class="pb-2">
+                    <a
+                      href="#contact"
+                      class="text-decoration-none text-secondary"
+                      >Contact</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Practice Area links -->
+              <div class="col-md-6">
+                <!-- heading -->
+                <div>
+                  <h5
+                    class="mt-3 mb-3 fs-6 text-white text-center text-md-end fw-bold"
+                  >
+                    Practice Area
+                  </h5>
+                </div>
+                <!-- Link list -->
+                <ul class="pt-3 small list-unstyled text-center text-md-end">
+                  <li class="pb-2">
+                    <a href="#" class="text-decoration-none text-secondary"
+                      >Business</a
+                    >
+                  </li>
+                  <li class="pb-2">
+                    <a href="#" class="text-decoration-none text-secondary"
+                      >Family</a
+                    >
+                  </li>
+                  <li class="pb-2">
+                    <a href="#" class="text-decoration-none text-secondary"
+                      >Finance</a
+                    >
+                  </li>
+                  <li class="pb-2">
+                    <a href="#" class="text-decoration-none text-secondary"
+                      >Criminal</a
+                    >
+                  </li>
+                  <li class="pb-2">
+                    <a href="#" class="text-decoration-none text-secondary"
+                      >Real Estate</a
+                    >
+                  </li>
+                  <li class="pb-2">
+                    <a href="#" class="text-decoration-none text-secondary"
+                      >Intellectual Property</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- footer copyright link -->
+        <div class="border-top border-secondary text-center text-md-start">
+          <p class="pt-2 small text-secondary">
+            Copyright &copy; 2023 by Roberts & Kelce, LLP. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- bootstrap link for js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
